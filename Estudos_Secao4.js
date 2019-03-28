@@ -6,3 +6,4 @@ var method_ = typeof(Math);
 console.log(method_.valueOf());
 
 
+xx
