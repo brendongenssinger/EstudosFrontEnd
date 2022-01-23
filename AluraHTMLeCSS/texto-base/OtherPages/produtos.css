@@ -1,6 +1,15 @@
 header
 {
     background-color: beige;
+    padding : 20px 0px;
+}
+nav
+{
+    /* Relativo, não tem posição fixa. */
+    position: absolute;
+    top: 110px;
+    right: 0px;
+
 }
 
 nav li
@@ -22,4 +31,12 @@ nav a
  {
      text-decoration: underline;
      border-radius: 14px;
+ }
+ .caixa
+ {
+     /* Posição relativo ao tamanho do component.
+     de 940px */
+     position: relative;
+     width: 940px;
+     margin: 0 auto;
  }
