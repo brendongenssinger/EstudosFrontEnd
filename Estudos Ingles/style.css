@@ -1,0 +1,58 @@
+body
+{
+    margin: 15px;
+}
+
+
+header
+{
+    margin:20px;
+}
+.img-logo
+{
+    width: 35%;
+    float: left;     
+    padding: 20px;    
+}
+.div-header
+{
+    display: inline-block;
+    width: 100%;
+}
+
+/* Tamanho do cabeçalho */
+.h1-header
+{   
+     margin-left: 40%;
+}
+
+.ul-header
+{    
+    padding-top: 6%;
+    padding-left: 55%;
+}
+.ul-header > li
+{
+    display: inline-block;
+    margin: 0px 10px 0px 0px;
+}
+
+.ul-header > li > p
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.ul-header > li > p > a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.ul-header > li > p > a:hover
+{
+    text-decoration: underline;
+    color: #0000ff;
+    font-size: 22px;
+    
+}
