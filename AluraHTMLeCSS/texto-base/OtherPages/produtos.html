@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <!-- The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. -->
@@ -10,8 +11,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="produtos.css">
-    <title>Produtos Alura</title>    
+    <script src="js/teste.js">
+    </script>
+
+    <title>Produtos Alura</title>
 </head>
+
 <body>
     <!-- #Region start Header -->
     <header>
@@ -19,8 +24,24 @@
             <h1><img src="imgs/logo.png" alt=""></h1>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
+                    <li>
+                        <a href="../index.html" onmouseover="AcessHoverMenu(this,false,0)" onmouseleave="AcessHoverMenu(this,true)">
+                            Home
+                            <ul id="firtLI">
+                                <li>Home 1</li>
+                                <li>Home 2</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="produtos.html" onmouseover="AcessHoverMenu(this,false)" onmouseleave="AcessHoverMenu(this,true)">
+                            Produtos
+                            <ul>
+                                <li>Produtos 1</li>
+                                <li>Produtos 2</li>
+                            </ul>
+                        </a>
+                    </li>
                     <li><a href="../contatos.html">Contatos</a></li>
                 </ul>
             </nav>
@@ -28,11 +49,31 @@
     </header>
     <!-- #Region end Header -->
 
+    <!-- #Region start Main -->
     <main>
-        cabelo
-        barba
-        cabelo+barba
+        <ul class="produtos">
+            <li>
+                <h2>Cabelo</h2>
+                <img src="imgs/cabelo.jpg" alt="">
+                <p>Na Tesoura ou na máquina como o cliente preferir</p>
+                <p>R$ 25,00</p>
+            </li>
+            <li>
+                <h2>Barba</h2>
+                <img src="imgs/barba.jpg" alt="">
+                <p>Corte e desenho profissionais de barba</p>
+                <p>R$ 18,00</p>
+            </li>
+            <li>
+                <h2>Cabelo+Barba</h2>
+                <img src="imgs/cabelo+barba.jpg" alt="">
+                <p>Pacote completo de cabelo e barba</p>
+                <p>R$ 35,00</p>
+            </li>
+        </ul>
     </main>
+    <!-- #Region end Main -->
 
 </body>
+
 </html>
